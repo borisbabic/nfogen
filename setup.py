@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='nfogen',
-    version='0.0.2',
+    version='0.0.3',
     author='Boris Babic',
     author_email='boris.ivan.babic@gmail.com',
     packages=['nfogen'],
