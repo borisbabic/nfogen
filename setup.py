@@ -10,7 +10,7 @@ setup(
     url='template url',
     entry_points={
             'console_scripts': [
-                'nfogen = nmanager:main',
+                'nfogen = nfogen:main',
             ],
         },
     install_requires=[
