@@ -76,9 +76,12 @@ def main():
         exit(3)
 
     os.chdir(base_directory)
-    tv_directories = filter(os.path.isdir, os.listdir('.' + DIRECTORY_SLASH))
-    for tv_dir in tv_directories:
-        print "======================\nSearching for: " + tv_dir
+    tv_directories = sorted(filter(os.path.isdir, os.listdir('.' + DIRECTORY_SLASH)))
+    num_dirs = len(tv_directories)
+    for i in range(0, num_dirs):
+        tv_dir = tv_directories[i]
+
+        print "======================\t {0}/{1}\nSearching for: {2}".format(i+1, num_dirs) + tv_dir
         if (os.path.exists(add_slash(tv_dir) + TV_SHOW_NFO)):
             print tv_dir + " already has a " + TV_SHOW_NFO
             SKIPPED.append(tv_dir)
