@@ -13,7 +13,7 @@ t=Tvdb(True)
 DIRECTORY_SLASH = '\\' if os.name =='nt' else '/'
 
 BASE_URL = 'http://thetvdb.com/?tab=series&id={tv_show_id}&lid=7'
-TV_SHOW_NFO = 'tvshow_nfo'
+TV_SHOW_NFO = 'tvshow.nfo'
 MATCH_YEAR = re.compile('\(\d+\)')
 FAILED = []
 SUCCESS = []
